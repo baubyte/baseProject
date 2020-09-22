@@ -3,4 +3,6 @@
      * desde ../app/bootstrap.php
      */
     require_once '../app/bootstrap.php';
-?>
+
+    /**Intanciamos las Clase Core */
+    $iniciar = new Core();

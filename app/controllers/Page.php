@@ -1,19 +1,14 @@
 <?php
-class Page
+class Page extends Controller
 {
     public function __construct()
     {
-        //echo 'paginas cargadas';
     }
     public function index()
     {
-        
-    }
-    public function articulo()
-    {
-    }
-    public function actualizar($id,$a)
-    {
-        echo $id." ".$a;
+        $data = [
+            'titulo' => 'baseProject',
+        ];
+        $this->view('pages/index', $data);
     }
 }
